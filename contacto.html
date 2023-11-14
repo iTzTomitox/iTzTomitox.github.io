@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mi</title>
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/contacto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bacasime+Antique&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bacasime+Antique&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/portafolio.html">Tomix Visuals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/portafolio.html">Proyects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about-me.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section>
+      <div class="home-container">
+        <h1 class="text-atras">Contacto</h1>
+        <h1 class="text-adelante">Contacto</h1>
+        <img class="img-atras" src="assets/Tomix 2.jpg" alt="Foto">
+      </div>
+    </section>
+    
+    <section>
+      <div class="form-container">
+        <form>
+          <div class="mb-3">
+            <label for="form-input-name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="form-input-name" name="sender_name" required>
+          </div>
+      
+          <div class="mb-3">
+            <label for="form-input-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="form-input-email" name="sender_email" required>
+            <!-- <div id="emailHelp" class="form-text">Nunca compartiré tu mail con alguien más, o quizá si...</div> -->
+          </div>
+      
+          <div class="form-floating mt-5">
+            <textarea class="form-control" id="form-input-mensaje" placeholder="Leave a comment here" name="sender_message" required></textarea>
+            <label for="form-input-mensaje">Mensaje</label>
+          </div>
+      
+          <div class="btn-container">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="bg-noise"></div>
+  </main>
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3  border-top  bg-body-tertiary">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Tomix Visuals</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://www.instagram.com/tomix_visuals/" target="_blank">
+          <img class="instagram_logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAY1JREFUSEvNVdFNAlEQnOnADoAK1ArQCoQOsAM6ACswVqBWoFSgVgBWAB2IFawZso8sj+Pu3ccFN7mQcPtmdnb3zREdBzvGx3kIzKwPYAbgyp86oSsAep5I6vcgjhSY2QTAs2d9Adg6QBWJCrgAMPSX9yRfYuIBgZnpwBKAgEckBd4YrvgdwCWA66gkJxD7CEC/BNzMVP2bF6SzawCvJNWFXeQEGwAbkjd52WYmYlWoWJFcRMU6Y2afAHokB6cIzIc1TQle5UfFsAU2llovausEQ5L7wnMFInggOQ8E2gyBTEiqz3A1asmS5G3IFWk5gQOpx+MEHsDStu3ftVZgZlIyi5Kz1v1Exf+SQJvTXYt8oBpyz4e88P/U/0cA33GlS1skT8nXVNuR7kAaw9FtLyFoumiyknTRdisbwwnkAlrrypus3b4DMCixigxcoI1WkcxOLZEzSlFjuNlpGXT+tNmFASa7FlGdXSfPSr/1dh0ukSrRoHVQG1QXvwBUyLzog9PYj5YJ5/kmtyyyNv0Pat76GW+myaQAAAAASUVORK5CYII=">
+        </a>
+        </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://www.linkedin.com/in/tomas-beron/" target="_blank">
+          <img class="linkedin_logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvllX0NwjAUxO8UgAQcgAPAASgACTjBAjgABTAHSEACKDhyTVnGx0iXbiSE99eWtO/Xd3fdiI6LHffHdwGSjgDGmVMdSU7vPR4mkKTM5mE7ybJvHeAKYBdhMwC9JuAUwJbk0k0lbQAsfg5weZKo3/YE9uAUm46iB0V8HwAw0B6dAdijYfUAKR4UJCfRgxDd+yZJ9mZH0lOGkrQCsC6jmZCiWkCdVJIMDGnLncDyHABYujnJEOfqJc0FWDoDXHuS9qAzwIuUbUhUneCPAY5c9aI5Ob4PLj87Qa5365Ji2uTL8LL2U0zb+OGUxodEZR01YfPvA26dus0ZVN2x2QAAAABJRU5ErkJggg==">
+        </a>
+        </li>
+      <li class="ms-3">
+        <a class="text-body-secondary" href="https://ar.pinterest.com/itz_tomitox/" target="_blank">
+          <img class="pinterest_logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfJJREFUSEu1VeE5Q0EQnKkAFaAC6QAVoAJUQCoQFaACVIAKSAdUICqQDsY39+096/KSyI/c970veff2dnZnZ/eINS+u2T+WAkg6A7APYBCPY3qP55nky6Ig5wJIOgZwA2BnSZYTAEOSz312vQCSbgFcrEjfLclhe2YGYIHzLwCO1msTwF5PAHckL/P+H4Cg5ak5+AjA0Zn3bkkydSMAp439SaarBXCE2+nAOckHv0s6iGL79aUChgju05kJyd363gH0GF6THEmyeuzAv3m9AXC0U0nO5Cp97LLIAI40p7sVh02N+R5HDbJN4VySa/KdAB5JWt6/fSCpOvL+mORBqokpsWxNVbabktyKfWfkfunOtwBKERSHKfUuZUnZEUgWFubtZ4oyQM2gcntI0o7tKNutBJAVVFIPKX4CqAU3TVnGXyRLp0uaAthYRJFb/SjRVJ2a85G13aOWIuOQ8OuyIrvqWc+2N0V+qqLcC3XmGNQjpS28t2ZlGoZto3n7g+Qg6DJ1pqKskKcHYpFkrI62PyqKAy3H3i6ajkb0AHS/OBBnY/t22s4fFQHSTtLKc9uIKejub6lb/jBvXGdnRaKNSv7lfIaifCq62NmYX9PQCqDjHMDlShdOA+Q547TNd520dS75yuy9yaqPpXdyHxer7K0d4Ac8uwEo8HgvngAAAABJRU5ErkJggg==">
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <script src="./scripts/formulario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
