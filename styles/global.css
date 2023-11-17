@@ -1,0 +1,137 @@
+*,*::after,*::before {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scrollbar-gutter: auto;
+}
+
+body {
+  width: 100%;
+  height: max-content;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-gutter: auto;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed!important;
+  z-index: 1000;
+}
+
+main {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding-top: 56px;
+  padding-bottom: 59px;
+  background-color: rgb(4, 4, 4);
+}
+
+main > section {
+  width: 100%;
+  height: calc(100vh - 56px - 59px);
+}
+
+main > section:first-child {
+  height: calc(100vh - 56px);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+body::-webkit-scrollbar{
+  width: 15px;
+  scrollbar-gutter: stable both-edges;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #424244;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #2e2e30;
+}
+
+.bg-noise {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-noise:before {
+  position: absolute;
+  content: "";
+  top: -10rem;
+  left: -10rem;
+  width: calc(100% + 20rem);
+  height: calc(100% + 20rem);
+  z-index: 3;
+  pointer-events: none;
+  background-image: url('https://alechernandez.es/assets/img/bg-noise.png');
+  background-position: 50%;
+  animation: 1s steps(2) infinite BgNoise;
+}
+
+@keyframes BgNoise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
